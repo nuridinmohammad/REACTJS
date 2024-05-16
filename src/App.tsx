@@ -1,12 +1,18 @@
 import "./App.css";
-import { Card } from "@mantine/core";
+import { Card, Text } from "@mantine/core";
+
+import { createTheme, MantineProvider } from "@mantine/core";
+
+const theme = createTheme({});
 
 function App() {
   return (
     <>
-      <Card>
-        <h1>Hello</h1>
-      </Card>
+      <MantineProvider theme={theme}>
+        <Card>
+          <Text fs={"italic"}>Hello World!</Text>
+        </Card>
+      </MantineProvider>
     </>
   );
 }
