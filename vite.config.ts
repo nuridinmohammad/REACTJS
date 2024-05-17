@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "apollo-upload-client": "apollo-upload-client/public/index.js",
+      // "apollo-upload-client": "apollo-upload-client/public/index.js",
     },
   },
 });
